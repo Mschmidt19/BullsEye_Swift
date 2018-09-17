@@ -12,6 +12,9 @@
 		EA1175B7214FEFC50067E6C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1175B5214FEFC50067E6C7 /* Main.storyboard */; };
 		EA1175B9214FEFC70067E6C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1175B8214FEFC70067E6C7 /* Assets.xcassets */; };
 		EA1175BC214FEFC70067E6C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1175BA214FEFC70067E6C7 /* LaunchScreen.storyboard */; };
+		EA1175C421504CCF0067E6C7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1175C321504CCF0067E6C7 /* AboutViewController.swift */; };
+		EA1175C6215050E70067E6C7 /* AboutTheAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1175C5215050E70067E6C7 /* AboutTheAuthorViewController.swift */; };
+		EA1175C8215062480067E6C7 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = EA1175C7215062480067E6C7 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EA1175B8214FEFC70067E6C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1175BB214FEFC70067E6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA1175BD214FEFC70067E6C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1175C321504CCF0067E6C7 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EA1175C5215050E70067E6C7 /* AboutTheAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTheAuthorViewController.swift; sourceTree = "<group>"; };
+		EA1175C7215062480067E6C7 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				EA1175B1214FEFC50067E6C7 /* AppDelegate.swift */,
 				EA1175B3214FEFC50067E6C7 /* ViewController.swift */,
+				EA1175C321504CCF0067E6C7 /* AboutViewController.swift */,
 				EA1175B5214FEFC50067E6C7 /* Main.storyboard */,
 				EA1175B8214FEFC70067E6C7 /* Assets.xcassets */,
 				EA1175BA214FEFC70067E6C7 /* LaunchScreen.storyboard */,
 				EA1175BD214FEFC70067E6C7 /* Info.plist */,
+				EA1175C5215050E70067E6C7 /* AboutTheAuthorViewController.swift */,
+				EA1175C7215062480067E6C7 /* BullsEye.html */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1175BC214FEFC70067E6C7 /* LaunchScreen.storyboard in Resources */,
+				EA1175C8215062480067E6C7 /* BullsEye.html in Resources */,
 				EA1175B9214FEFC70067E6C7 /* Assets.xcassets in Resources */,
 				EA1175B7214FEFC50067E6C7 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1175C421504CCF0067E6C7 /* AboutViewController.swift in Sources */,
 				EA1175B4214FEFC50067E6C7 /* ViewController.swift in Sources */,
 				EA1175B2214FEFC50067E6C7 /* AppDelegate.swift in Sources */,
+				EA1175C6215050E70067E6C7 /* AboutTheAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CCWFDY5C3;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MarekSchmidt.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CCWFDY5C3;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MarekSchmidt.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
